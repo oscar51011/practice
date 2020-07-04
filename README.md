@@ -31,6 +31,14 @@ gradle task envProd
 
   gradle bootRun
   
+# Home Page
+
+檢查 AP 狀態 : http://localhost:8080/apStatus
+首頁 : http://localhost:8080/
+
+
+- note: 以上的路徑以 dev 為主，如果需要切換不同環境，再自行換 port  
+  
   
 # FrontEnd
 - thymeleaf
