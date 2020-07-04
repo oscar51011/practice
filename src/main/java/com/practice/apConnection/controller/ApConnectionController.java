@@ -12,7 +12,7 @@ public class ApConnectionController {
 	@Autowired
 	private ApConnectionService service;
 	
-	@GetMapping("/")
+	@GetMapping("/apStatus")
 	public String test() {
 		return service.getConnectionInfo();
 	}
