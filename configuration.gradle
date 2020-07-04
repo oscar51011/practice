@@ -1,0 +1,40 @@
+def copyConfiguaration(String enviroment){
+	println "envirement: $enviroment"
+	
+	def applicationResourceFolder = 'src/main/resources'
+	def applicationPropertiesFile = 'src/main/resources/application.properties'
+	def propertiesFolder = 'src/main/resources/practice/properties'
+	
+	delete applicationPropertiesFile
+	delete propertiesFolder
+	
+	copy {
+		from "src/enviroment/$enviroment/application.properties"
+		into applicationResourceFolder
+	}
+	
+	copy {
+		from "src/enviroment/$enviroment/properties/"
+		into propertiesFolder
+		include "*/"
+	}
+	
+}
+
+task envDev {
+	doLast {
+		copyConfiguaration("dev")
+	}
+}
+
+task envTest {
+	doLast {
+		copyConfiguaration("test")
+	}
+}
+
+task envProd {
+	doLast {
+		copyConfiguaration("prod")
+	}
+}
