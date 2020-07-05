@@ -51,7 +51,7 @@ Relational database
 - H2 (0 目前練習預設使用 )
 - MySQL
 
-- note: 
+- note: <br>
   如果要使用 MySQL，請先安裝 MySQL 8.0.20 Local 版本 <br>
   使用 H2 啟動 Server後即可正常運作，datasource 選擇  <br>
   可在 enviroment/dev/application.properties 內調整 <br>
