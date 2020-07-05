@@ -49,11 +49,17 @@ gradle task envProd
 # DataBase
 Relational database
 
-H2 (0 目前練習預設使用 )
-MySQL
+H2 ( 目前練習預設使用 ) <br>
+MySQL <br> 
 
 - note: <br>
-  如果要使用 MySQL，請先安裝 MySQL 8.0.20 Local 版本 <br>
+  如果要使用 MySQL，請先安裝 MySQL 8.0.20 Local 版本 & url schema 帳號需要調整 <br>
+  ```
+  dev enviroment :
+  schema : dev 
+  username : root 
+  password : admin 
+  ```
   使用 H2 啟動 Server後即可正常運作，datasource 選擇  <br>
   可在 enviroment/dev/application.properties 內調整 <br>
   ※ application.properties 做了任何調整 都要 重新 change project enviroment，環境才會一致 <br>
