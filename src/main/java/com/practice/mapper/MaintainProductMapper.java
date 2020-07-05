@@ -11,4 +11,6 @@ import com.practice.productMaintain.model.ProductModel;
 public interface MaintainProductMapper {
 	int saveProduct(ProductModel product);
 	ProductModel findProductBySkuNumber(@Param("skuNumber")String skuNumber);
+	int updateProduct(ProductModel product);
+	void deleteProduct(int productId);
 }

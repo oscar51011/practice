@@ -4,8 +4,7 @@
         
 <mapper namespace="com.practice.mapper.MaintainProductMapper">
 
-	<insert id="saveProduct" parameterType="com.practice.productMaintain.model.ProductModel"
-	 useGeneratedKeys="true" keyProperty="productId" keyColumn="PRODUCT_ID">
+	<insert id="saveProduct" parameterType="com.practice.productMaintain.model.ProductModel">
 		INSERT INTO PRODUCT (SKU_NUMBER, SKU_NAME) VALUES (#{skuNumber}, #{skuName})	
 	</insert>
 
@@ -14,5 +13,14 @@
 		FROM PRODUCT
 		WHERE SKU_NUMBER = #{skuNumber}
 	</select>
+	
+	<update id="updateProduct" parameterType="com.practice.productMaintain.model.ProductModel">
+		UPDATE PRODUCT SET SKU_NUMBER = #{skuNumber}, SKU_NAME = #{skuName}
+		WHERE PRODUCT_ID = #{productId}
+	</update>
+	
+	<delete id="deleteProduct" parameterType="int">
+		DELETE FROM PRODUCT where PRODUCT_ID = #{productId}
+	</delete>
 
 </mapper>
