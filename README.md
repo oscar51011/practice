@@ -53,7 +53,7 @@ H2 ( 目前練習預設使用 ) <br>
 MySQL <br> 
 
 - note: <br>
-  如果要使用 MySQL，請先安裝 MySQL 8.0.20 Local 版本 & url schema 帳號需要調整 <br>
+  如果要使用 MySQL，請先安裝 MySQL 8.0.20 Local 版本 & url 需要調整 <br>
   ```
   dev enviroment :
   schema : dev 
