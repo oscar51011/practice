@@ -1,16 +1,16 @@
-package com.practice.apConnection.controller;
+package com.practice.monitorAp.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.practice.apConnection.service.ApConnectionService;
+import com.practice.monitorAp.service.MonitorApService;
 
 @RestController
-public class ApConnectionController {
+public class MonitorApController {
 	
 	@Autowired
-	private ApConnectionService service;
+	private MonitorApService service;
 	
 	@GetMapping("/apStatus")
 	public String test() {
