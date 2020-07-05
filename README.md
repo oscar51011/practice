@@ -33,8 +33,8 @@ gradle task envProd
   
 # Home Page
 
-檢查 AP 狀態 : http://localhost:8080/apStatus
-首頁 : http://localhost:8080/
+檢查 AP 狀態 : http://localhost:8080/apStatus <br>
+首頁 : http://localhost:8080/ <br>
 
 
 - note: 以上的路徑以 dev 為主，如果需要切換不同環境，再自行換 port  
