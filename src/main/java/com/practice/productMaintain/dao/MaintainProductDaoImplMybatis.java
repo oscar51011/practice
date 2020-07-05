@@ -22,19 +22,14 @@ public class MaintainProductDaoImplMybatis implements MaintainProductDao {
 		return mapper.findProductBySkuNumber(skuNumber);
 	}
 
-
 	@Override
 	public int updateProudct(ProductModel product) {
-		// TODO Auto-generated method stub
-		return 0;
+		return mapper.updateProduct(product);
 	}
 
-
-
 	@Override
-	public int deleteProductById(int productId) {
-		// TODO Auto-generated method stub
-		return 0;
+	public void deleteProduct(int productId) {
+		mapper.deleteProduct(productId);
 	}
 	
 }
