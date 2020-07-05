@@ -5,6 +5,8 @@ plugins {
 }
 
 apply from : 'configuration.gradle'
+apply plugin: 'jacoco'
+
 group = 'com'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '1.8'
@@ -32,3 +34,12 @@ dependencies {
 test {
 	useJUnitPlatform()
 }
+
+jacocoTestReport {
+	reports {
+		xml.enabled false
+		html.enabled true
+	}
+}
+
+check.dependsOn jacocoTestReport
