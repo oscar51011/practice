@@ -48,8 +48,9 @@ gradle task envProd
 
 # DataBase
 Relational database
-- H2 (0 目前練習預設使用 )
-- MySQL
+
+H2 (0 目前練習預設使用 )
+MySQL
 
 - note: <br>
   如果要使用 MySQL，請先安裝 MySQL 8.0.20 Local 版本 <br>
