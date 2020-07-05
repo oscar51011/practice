@@ -7,29 +7,29 @@
 
 dev enviroment <br>
 
-gradle task envDev
+`gradle task envDev`
 
 - note: starts on port '8080'
 
 test enviroment <br>
 
-gradle task envTest
+`gradle task envTest`
 
 - note: starts on port '8081'
 
 Prod enviroment <br>
 
-gradle task envProd
+`gradle task envProd`
 
 - note: starts on port '9000'
 
 # Build the project 
 
-  gradle clean build
+  `gradle clean build`
 
 # Run the project
 
-  gradle bootRun
+  `gradle bootRun`
   
 # Home Page
 
@@ -54,14 +54,16 @@ MySQL <br>
 
 - note: <br>
   如果要使用 MySQL，請先安裝 MySQL 8.0.20 Local 版本 & url 需要調整 <br>
+  
   ```
   dev enviroment :
   schema : dev 
   username : root 
   password : admin 
   ```
-  使用 H2 啟動 Server後即可正常運作，datasource 選擇  <br>
-  可在 enviroment/dev/application.properties 內調整 <br>
+  使用 H2 啟動 Server後即可正常運作 <br>
+  
+  datasource 選擇　可在 enviroment/dev/application.properties 內調整 <br>
   ※ application.properties 做了任何調整 都要 重新 change project enviroment，環境才會一致 <br>
 
 # Unit Test
