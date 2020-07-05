@@ -57,7 +57,10 @@ MySQL
   使用 H2 啟動 Server後即可正常運作，datasource 選擇  <br>
   可在 enviroment/dev/application.properties 內調整 <br>
   ※ application.properties 做了任何調整 都要 重新 change project enviroment，環境才會一致 <br>
-  
+
+# Unit Test
+Jacoco 觀察測試覆蓋率套件
+測試報告 經由 gradle build 後 可以在 {自定義workspace}\practice\build\reports\jacoco\test\html 底下找到
   
 # TODO
 1. multiple datasource 設定
