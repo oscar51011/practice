@@ -1,5 +1,5 @@
 package com.practice.monitorAp.dao;
 
-public class MonitorApDao {
-	
+public interface MonitorApDao {
+	public int getDbConnection();
 }
