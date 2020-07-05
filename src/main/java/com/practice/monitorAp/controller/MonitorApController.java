@@ -13,7 +13,7 @@ public class MonitorApController {
 	private MonitorApService service;
 	
 	@GetMapping("/apStatus")
-	public String test() {
+	public String getApStatus() {
 		return service.getConnectionInfo();
 	}
 }
