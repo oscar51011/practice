@@ -1,0 +1,1 @@
+insert into PRODUCT (SKU_NUMBER, SKU_NAME)VALUES('test2', '測試商品2');
