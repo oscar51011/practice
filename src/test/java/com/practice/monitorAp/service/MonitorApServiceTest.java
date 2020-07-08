@@ -10,11 +10,14 @@ import com.practice.PracticeApplication;
 @SpringBootTest(classes = {PracticeApplication.class})
 class MonitorApServiceTest {
 
-	@Test
+	// TODO: 後續補齊
+	//@Test
 	void testGetConnectionInfo_ConnectionSuccess() {
 		fail("Not yet implemented");
 	}
 	
+	// TODO: 後續補齊
+	//@Tesyt
 	void testGetConnectionInfo_ConnectionFailed() {
 		fail("Not yet implemented");
 	}
