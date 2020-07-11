@@ -30,6 +30,8 @@ public class MonitorApService {
 
 	public Map<String, String> getConnectionInfo() {
 		
+		logger.info("查詢-資料庫連線情況");
+		
 		Map<String, String> apInfoMap = new HashMap<String, String>();
 		
 		try {

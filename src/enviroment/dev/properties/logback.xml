@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration >
+
+	<property name="appender.file.path.systemErrorPath" value="D://practiceLog/systemError" />
+	<property name="appender.file.path.apLogPath" value="D://practiceLog/apLog" />
+	
+	<!-- Console配置 -->
+	<appender name="RootConsoleAppender" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%d{yyyy-MM-dd HH:mm:ss:SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+		</encoder>
+	</appender>
+	
+	<!-- File apLog 配置 -->
+	<appender name="RootApLogAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${appender.file.path.apLogPath}/AP.log</file>
+		<!-- 切割時間，ex: 可以一小時切一個檔案 -->
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${appender.file.path.apLogPath}/systemError_%d{yyyy-MM-dd_HH}.log</fileNamePattern>
+		</rollingPolicy>
+		<encoder>
+			<pattern>%d{yyyy-MM-dd HH:mm:ss:SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+		</encoder>
+	</appender>
+
+	<!-- File systemError 配置 -->
+	<appender name="RootSystemErrorAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${appender.file.path.systemErrorPath}/systemError.log</file>
+		<!-- 只印出 level 為 error 的訊息 -->
+		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+			<level>error</level>
+		</filter>
+		<!-- 切割時間，ex: 可以一小時切一個檔案 -->
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${appender.file.path.systemErrorPath}/systemError_%d{yyyy-MM-dd_HH}.log</fileNamePattern>
+		</rollingPolicy>
+		<encoder>
+			<pattern>%d{yyyy-MM-dd HH:mm:ss:SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+		</encoder>
+	</appender>
+		
+	<root level="info">
+		<appender-ref ref="RootConsoleAppender" /> 
+		<appender-ref ref="RootApLogAppender" />
+    	<appender-ref ref="RootSystemErrorAppender" />
+	</root>
+	
+</configuration>
