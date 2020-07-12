@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" 
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<link rel="stylesheet" type="text/css" th:href="@{css/template.css}" />
+</head>
+<body>
+	<!-- 使用共用的 導覽頁 -->
+	<section layout:fragment="custom-header">
+		<header layout:replace="header.html" ></header>
+	</section>
+	<!-- 以下為可客製 content & footer -->
+	<div class="container-fluid">	
+	
+	<div class="template-content">
+		<section layout:fragment="custom-content">
+			<p>template content</p>
+		</section>
+	</div>
+	
+	<!-- footer 暫時不實作 -->
+	<section layout:fragment="custom-footer">
+		</section>
+	</div>		
+		
+</body>
+</html>

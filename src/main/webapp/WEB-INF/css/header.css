@@ -1,0 +1,28 @@
+body {
+	font-family : Tahoma, Microsoft JhengHei;
+}
+
+.navbar {
+    margin-bottom: 0;
+    background-color: #009393;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+}
+<!-- 首頁字體顏色 -->
+.navbar li a, .navbar .navbar-brand {
+  color: #fff !important;
+}
+
+<!-- 移至導覽頁時，改變字體, 背景色 -->
+.navbar-nav li a:hover, .navbar-nav li.active a {
+  color: #000000 !important;
+  background-color: #fff !important;
+}
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+  color: #fff !important;
+}
