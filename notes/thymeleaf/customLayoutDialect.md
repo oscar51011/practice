@@ -34,4 +34,5 @@ tag : `<section layout:fragment="自定義名稱">`
 
 
 Reference : <br>
- - [Working with Fragments in Thymeleaf - Baseldung](https://www.baeldung.com/spring-thymeleaf-fragments)
+ - [Working with Fragments in Thymeleaf - Baeldung](https://www.baeldung.com/spring-thymeleaf-fragments)
+ - [https://www.baeldung.com/thymeleaf-spring-layouts - Baeldung](https://www.baeldung.com/thymeleaf-spring-layouts)
