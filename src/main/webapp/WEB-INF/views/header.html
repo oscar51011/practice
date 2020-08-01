@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" type="text/css" th:href="@{css/header.css}" />
+	<link rel="stylesheet" type="text/css" th:href="@{/css/header.css}" />
 </head>
 
 <body>
@@ -24,8 +24,12 @@
 		      <a class="navbar-brand" th:href="@{/}">Practice首頁</a>
 		    </div>
 		    <div class="collapse navbar-collapse" id="myNavbar">
+		      <!-- 往右靠 -->
 		      <ul class="nav navbar-nav navbar-right">
-		        <li><a th:href="@{/}">商品</a></li>
+		        <li><a th:href="@{/springmvcView/getSpringmvcView}">練習</a></li>
+		      </ul>
+		      <ul class="nav navbar-nav navbar-right">
+		        <li><a th:href="@{/maintainProduct/getProductView}">商品</a></li>
 		      </ul>
 		    </div>
 		  </div>

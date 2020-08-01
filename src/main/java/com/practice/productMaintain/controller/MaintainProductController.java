@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/maintainProduct")
 public class MaintainProductController {
 
-	@GetMapping("/product")
+	@GetMapping("/getProductView")
 	public String getProductViewPage(Model model) {
 		return "product/productView.html";
 	}
