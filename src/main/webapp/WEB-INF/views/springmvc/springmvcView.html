@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:with="lang=${#locale.language}" 
+	xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout" th:lang="${lang}"
+	layout:decorate="~{template.html}">
+<head>
+	<title>springmvc練習頁</title>
+	<meta charset="UTF-8">
+</head>
+
+<body>
+	
+	<section layout:fragment="custom-content">
+		<div class="home text-center">
+			<h1>practice</h1>
+		</div>
+	</section>
+	
+</body>
+
+</html>
