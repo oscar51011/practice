@@ -1,13 +1,21 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
-
+<html xmlns:th="http://www.thymeleaf.org" th:with="lang=${#locale.language}" 
+	xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout" th:lang="${lang}"
+	layout:decorate="~{template.html}">
 <head>
 	<title>Practice商品頁</title>
 	<meta charset="UTF-8">
 </head>
 
 <body>
-	Hello Product
+	
+	<section layout:fragment="custom-content">
+		<div class="home text-center">
+			<h1>Hello Product</h1>
+			<p>待辦事項</p> 
+		</div>
+	</section>
+	
 </body>
 
 </html>
