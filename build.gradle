@@ -24,11 +24,15 @@ dependencies {
 	implementation 'mysql:mysql-connector-java:8.0.20'
 	
 	implementation 'com.google.code.gson:gson:2.8.6'
+	implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.9.8'
 	
 	
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.1.3'
 	runtimeOnly 'com.h2database:h2'
+	
+	// eclipse version can't run junit5
+	testCompile group: 'org.junit.platform', name: 'junit-platform-launcher', version: '1.6.2'
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
 	}
