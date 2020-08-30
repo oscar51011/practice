@@ -7,10 +7,10 @@ import org.springframework.boot.test.context.SpringBootTest;
 import com.practice.PracticeApplication;
 
 @SpringBootTest(classes = {PracticeApplication.class})
-class PracticeServiceTest {
+class PracticeServiceWithoutStrategyTest {
 	
 	@Autowired
-	private PracticeService service;
+	private PracticeServiceWithoutStategy service;
 
 	@Test
 	void testPracticeStrategy() {

@@ -11,7 +11,7 @@ import com.practice.practiceStrategy.dto.Player3;
 import com.practice.practiceStrategy.dto.Players;
 
 @Service
-public class PracticeService {
+public class PracticeServiceWithoutStategy {
 	
 	public void practiceStrategy() {
 	
