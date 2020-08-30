@@ -23,17 +23,17 @@
 沒有使用 strategy 的 流程 : [PracticeServcieWithoutStrategy.java](https://github.com/oscar51011/practice/blob/master/src/main/java/com/practice/practiceStrategy/PracticeServiceWithoutStategy.java) <br>
 
 ※ 拆解需要以下步驟 : <br>
- - 1. 定義 Enum 決定有多少的策略 ( [PracticeEnum.java](https://github.com/oscar51011/practice/blob/master/src/main/java/com/practice/practiceStrategy/PracticeEnum.java))
- - 2. 定義 strategy 的 interface ( [plaerAction.java](https://github.com/oscar51011/practice/blob/master/src/main/java/com/practice/practiceStrategy/playerAction/PlayerAction.java))
- - 3. 各自實作不同的 strategy ( [playerActionImpl package](https://github.com/oscar51011/practice/tree/master/src/main/java/com/practice/practiceStrategy/playerAction) )
- - 4. 建立 context，給定實際的策略去進行流程 ( [PlayerActionContext.java](https://github.com/oscar51011/practice/blob/master/src/main/java/com/practice/practiceStrategy/PlayerActionContext.java) )
- - 5. 建立 factory，經由不同的參數產出需要執行的 實例
+  - 定義 Enum 決定有多少的策略 ( [PracticeEnum.java](https://github.com/oscar51011/practice/blob/master/src/main/java/com/practice/practiceStrategy/PracticeEnum.java))
+  - 定義 strategy 的 interface ( [plaerAction.java](https://github.com/oscar51011/practice/blob/master/src/main/java/com/practice/practiceStrategy/playerAction/PlayerAction.java))
+  - 各自實作不同的 strategy ( [playerActionImpl package](https://github.com/oscar51011/practice/tree/master/src/main/java/com/practice/practiceStrategy/playerAction) )
+  - 建立 context，給定實際的策略去進行流程 ( [PlayerActionContext.java](https://github.com/oscar51011/practice/blob/master/src/main/java/com/practice/practiceStrategy/PlayerActionContext.java) )
+  - 建立 factory，經由不同的參數產出需要執行的 實例
  
 ※ 如果需要新增策略需要怎麼做 ? 
- - 1. Enum 新增策略的 value
- - 3. 實作一個新的 strategy class
- - 5. factory 多一個 新產生的 實例
- - 修改流程2 (共同運算邏輯)
+  - Enum 新增策略的 value
+  - 實作一個新的 strategy class
+  - factory 多一個 新產生的 實例
+  修改流程2 (共同運算邏輯)
  
  這樣的做法就不會去大幅度異動到原本的流程 ( 擴展容易 )
  
