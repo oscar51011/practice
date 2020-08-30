@@ -20,7 +20,11 @@
 2. 將 所有CASE的人的 分數進行加總平均，並算出分數差異
 3. 印出不同的 CASE 的人的 分數差異
 
+<br>
+
 沒有使用 strategy 的 流程 : [PracticeServcieWithoutStrategy.java](https://github.com/oscar51011/practice/blob/master/src/main/java/com/practice/practiceStrategy/PracticeServiceWithoutStategy.java) <br>
+
+<br>
 
 ※ 拆解需要以下步驟 : <br>
   - 定義 Enum 決定有多少的策略 ( [PracticeEnum.java](https://github.com/oscar51011/practice/blob/master/src/main/java/com/practice/practiceStrategy/PracticeEnum.java))
@@ -37,7 +41,11 @@
  
  這樣的做法就不會去大幅度異動到原本的流程 ( 擴展容易 )
  
+ <br>
+ 
 使用 strategy 後 的流程 : [PracticeServiceAddStrategy.java](https://github.com/oscar51011/practice/blob/master/src/main/java/com/practice/practiceStrategy/PracticeServiceAddStrategy.java) <br>
+
+ <br> 
 
 差異  : 消弭 流程 1 & 3 大幅度使用 case when 的情況 
 
