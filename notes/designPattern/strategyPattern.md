@@ -1,4 +1,4 @@
-#Strategy Pattern
+# Strategy Pattern
 
 在很多 case when or if 的情況下，就可以使用 這種設計模式 <br>
 
@@ -20,13 +20,13 @@
 2. 將 所有CASE的人的 分數進行加總平均，並算出分數差異
 3. 印出不同的 CASE 的人的 分數差異
 
-沒有使用 strategy 的 流程 : PracticeServcieWithoutStrategy.java <br>
+沒有使用 strategy 的 流程 : [PracticeServcieWithoutStrategy.java](https://github.com/oscar51011/practice/blob/master/src/main/java/com/practice/practiceStrategy/PracticeServiceWithoutStategy.java) <br>
 
 ※ 拆解需要以下步驟 : <br>
- - 1. 定義 Enum 決定有多少的策略 ( PracticeEnum.java )
- - 2. 定義 strategy 的 interface ( plaerAction.java interface )
- - 3. 各自實作不同的 strategy ( playerAction.java package )
- - 4. 建立 context，給定實際的策略去進行流程 ( PlayerActionContext.java )
+ - 1. 定義 Enum 決定有多少的策略 ( [PracticeEnum.java](https://github.com/oscar51011/practice/blob/master/src/main/java/com/practice/practiceStrategy/PracticeEnum.java))
+ - 2. 定義 strategy 的 interface ( [plaerAction.java](https://github.com/oscar51011/practice/blob/master/src/main/java/com/practice/practiceStrategy/playerAction/PlayerAction.java))
+ - 3. 各自實作不同的 strategy ( [playerActionImpl package](https://github.com/oscar51011/practice/tree/master/src/main/java/com/practice/practiceStrategy/playerAction) )
+ - 4. 建立 context，給定實際的策略去進行流程 ( [PlayerActionContext.java](https://github.com/oscar51011/practice/blob/master/src/main/java/com/practice/practiceStrategy/PlayerActionContext.java) )
  - 5. 建立 factory，經由不同的參數產出需要執行的 實例
  
 ※ 如果需要新增策略需要怎麼做 ? 
@@ -37,7 +37,7 @@
  
  這樣的做法就不會去大幅度異動到原本的流程 ( 擴展容易 )
  
-使用 strategy 後 的流程 : PracticeServiceAddStrategy.java <br>
+使用 strategy 後 的流程 : [PracticeServiceAddStrategy.java](https://github.com/oscar51011/practice/blob/master/src/main/java/com/practice/practiceStrategy/PracticeServiceAddStrategy.java) <br>
 
 差異  : 消弭 流程 1 & 3 大幅度使用 case when 的情況 
 
