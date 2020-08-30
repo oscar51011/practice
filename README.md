@@ -4,6 +4,12 @@
 2. 目前 以 dev 為主線，要使用請切換 dev 環境以利執行
 
 # 練習主題 
+## Design Pattern
+- [strategy pattern 練習](https://github.com/oscar51011/practice/blob/master/notes/designPattern/strategyPattern.md)
+
+## API
+- [Line Notify 練習](https://github.com/oscar51011/practice/blob/master/notes/lineNotify/lineNotify.md)
+
 
 # change project enviroment
 
