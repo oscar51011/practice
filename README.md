@@ -11,6 +11,9 @@
 - [Line Notify 練習](https://github.com/oscar51011/practice/blob/master/notes/lineNotify/lineNotify.md)
 
 
+## Redis
+- [window 安裝 redis & 初體驗](https://github.com/oscar51011/practice/blob/master/notes/redis/GettingStarted.md)
+
 # change project enviroment
 
 dev enviroment <br>
