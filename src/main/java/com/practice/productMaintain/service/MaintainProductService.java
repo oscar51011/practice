@@ -39,9 +39,9 @@ public class MaintainProductService {
 			
 			try {
 				redisTemplate.setValueSerializer(new StringRedisSerializer());
-		        ValueOperations<Serializable, Object> operations = redisTemplate.opsForValue();
+		        	ValueOperations<Serializable, Object> operations = redisTemplate.opsForValue();
 		        
-		        skuName = (String) operations.get(skuNumber);
+		        	skuName = (String) operations.get(skuNumber);
 		        
 		        logger.info("商品顯示:" + skuName);
 		        	        
