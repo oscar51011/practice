@@ -1,6 +1,14 @@
 package com.practice.productMaintain.model;
 
-public class ProductModel {
+import java.io.Serializable;
+
+public class ProductModel implements Serializable {
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -4181857961244131460L;
+	
 	private int productId;
 	private String skuNumber;
 	private String skuName;
