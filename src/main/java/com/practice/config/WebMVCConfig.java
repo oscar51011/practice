@@ -36,7 +36,7 @@ import nz.net.ultraq.thymeleaf.decorators.strategies.GroupingStrategy;
  */
 @Configuration
 @EnableWebMvc
-@ComponentScan({ "com.practice" })
+//@ComponentScan({ "com.practice" })
 public class WebMVCConfig implements WebMvcConfigurer, ApplicationContextAware  {
 	
 	private ApplicationContext applicationContext;
