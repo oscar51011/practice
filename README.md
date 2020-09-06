@@ -21,7 +21,8 @@
 TODO :
 前後端分離，
 JWT 在 API 用 Request Header : Authorization : Bearer [當下token]
-JWT 在 WebPage 跳轉時， 可以前端存在 HttpOnly Cookies 解決 <br>
+JWT 在 WebPage 跳轉時， 可以前端存在 HttpOnly Cookies 解決
+
 Q1 : 還沒想到怎麼整合 這兩種方式 
 Q2 : Token 過期怎麼處理
 ```
