@@ -43,7 +43,7 @@ Postman範例:
 ```
 Http Method: Post
 
-URL : http://localhost:8080/maintainProduct/getProductSkuNumber
+URL : http://localhost:8080/api/maintainProduct/getProductSkuNumber
 
 Headers :
 Content-Type : application/json

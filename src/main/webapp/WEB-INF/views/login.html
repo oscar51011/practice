@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:with="lang=${#locale.language}" 
+	xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout" th:lang="${lang}">
+<head>
+	<title>LoginPage</title>
+	<meta charset="UTF-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<script type="text/javascript">
+$(document).on("click", "#loginBtn", function(){
+	
+	console.log("Login Btn");
+	
+    var username = $("#username").val();
+    var password = $("#password").val();
+    if (username == "" || password == "") {
+		alert("不得為空");
+        return;
+    }
+    
+    var dataJson = {};
+    dataJson["userName"] = username;
+    dataJson["password"] = password;
+    
+    console.log(username + password);
+      
+    $.ajax({
+        type: "POST",
+        url: "/authenticate",
+        dataType:"json",
+        contentType: "application/json;charset=utf-8",
+        data: JSON.stringify(dataJson),
+        
+        success: function (data) {
+        	// save token
+        	localStorage.setItem("token", data.token);
+        	window.location.href = "home";
+        },
+        error: function (xhr) {
+			alert("帳密有問題，無法取得token")
+        }
+    });
+    
+});
+</script>
+
+<body>
+    <form>
+        <h2>請登入</h2>
+        <p>
+          名稱
+          <input type="text" id="username" name="username" required/>
+        </p>
+        <p>
+          密碼
+          <input type="password" id="password" name="password" required/>
+        </p>
+        <input type="button" id = "loginBtn" value="登入">
+    </form>
+</body>
+</html>
