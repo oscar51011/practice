@@ -17,6 +17,17 @@
 ## Security 
 - [SpringSecurity + JWT 保護 API](https://github.com/oscar51011/practice/blob/master/notes/spring/security/springSecurity%26Jwt.md)
 
+```
+TODO :
+前後端分離，
+JWT 在 API 用 Request Header : Authorization : Bearer [當下token]
+JWT 在 WebPage 跳轉時， 可以前端存在 HttpOnly Cookies 解決 <br>
+Q1 : 還沒想到怎麼整合 這兩種方式 
+Q2 : Token 過期怎麼處理
+```
+查到的資源，先註記: <br>
+[Spring Boot Authentication with VueJS + JWT + Http Only Cookie](https://medium.com/@altunkan/spring-boot-authentication-with-vuejs-jwt-http-only-cookie-4d8cfe7e4f0f)
+
 
 # change project enviroment
 
