@@ -14,6 +14,10 @@
 ## Redis
 - [window 安裝 redis & 初體驗](https://github.com/oscar51011/practice/blob/master/notes/redis/GettingStarted.md)
 
+## Security 
+- [SpringSecurity + JWT 保護 API](https://github.com/oscar51011/practice/blob/master/notes/spring/security/springSecurity%26Jwt.md)
+
+
 # change project enviroment
 
 dev enviroment <br>
@@ -80,7 +84,4 @@ MySQL <br>
 # Unit Test
 Jacoco 觀察測試覆蓋率套件 <br>
 測試報告 經由 gradle build 後 可以在 {自定義workspace}\practice\build\reports\jacoco\test\html 底下找到
-  
-# TODO
-1. multiple datasource 設定
 
