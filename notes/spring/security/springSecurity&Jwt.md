@@ -55,7 +55,7 @@ Authorization : Bearer [當下token]
  
  
  ```
- 
+ ※ Hint: 該 API 有涉及 Redis 如果要測，請先裝 Redis : [安裝連結](https://github.com/oscar51011/practice/blob/master/notes/redis/GettingStarted.md)
  
  Reference:<br>
  [Spring Boot Security + JWT Hello World Example](https://www.javainuse.com/spring/boot-jwt) <br>
