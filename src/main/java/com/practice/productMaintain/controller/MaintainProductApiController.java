@@ -13,6 +13,10 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.practice.productMaintain.dto.ProductRequest;
 import com.practice.productMaintain.service.MaintainProductService;
 
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+
+@Api(tags="MaintainProductApiController")
 @Controller
 @RequestMapping("/api/maintainProduct")
 public class MaintainProductApiController {
@@ -22,6 +26,7 @@ public class MaintainProductApiController {
 	@Autowired
 	private MaintainProductService maintainProductService;
 	
+	@ApiOperation(value ="取得商品資訊", notes="利用商品號碼取得商品資訊")
 	@PostMapping(value = "/getProductSkuNumber", produces = MediaType.APPLICATION_JSON_VALUE)
 	@ResponseBody
 	public String getSkuNameBySkuNumber(@RequestBody ProductRequest product) {
