@@ -144,6 +144,11 @@ public class WebMVCConfig implements WebMvcConfigurer, ApplicationContextAware  
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/resources/**", "/css/**", "/js/**")
             .addResourceLocations("/WEB-INF/resources/", "/WEB-INF/css/", "/WEB-INF/js/");
+        
+        // 加入 swagger2
+        registry.addResourceHandler("swagger-ui.html")
+        .addResourceLocations("classpath:/META-INF/resources/");
+        registry.addResourceHandler("/webjars/**")
+        .addResourceLocations("classpath:/META-INF/resources/webjars/");
     }
-
 }
