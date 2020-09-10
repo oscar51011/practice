@@ -14,11 +14,11 @@
 ## Redis
 - [window 安裝 redis & 初體驗](https://github.com/oscar51011/practice/blob/master/notes/redis/GettingStarted.md)
 
-## Security 
-- [SpringSecurity + JWT 保護 API](https://github.com/oscar51011/practice/blob/master/notes/spring/security/springSecurity%26Jwt.md)
-
 ## Swagger2
 - [利用Swagger2 撰寫 API 規格](https://github.com/oscar51011/practice/blob/master/notes/swagger/swagger2.md)
+
+## Security 
+- [SpringSecurity + JWT 保護 API](https://github.com/oscar51011/practice/blob/master/notes/spring/security/springSecurity%26Jwt.md)
 
 ```
 TODO :
