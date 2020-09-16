@@ -35,7 +35,8 @@ public class MaintainProductApiController {
 			
 		String name = maintainProductService.getProductNameBySkuNumber(product.getSkuNumber());
 		
-		logger.info("Controller output:" + name); 
+		logger.info("Controller output:" + name);
+		// 123
 		
 		return name;
 	}
