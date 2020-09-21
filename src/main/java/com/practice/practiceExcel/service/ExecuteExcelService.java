@@ -40,48 +40,49 @@ public class ExecuteExcelService {
 		
 		StudentExcelContent studentExcelContnet = new StudentExcelContent();
 		List<String> titles = new ArrayList<String>();
-		// 處理 title
-		Row titleRow = sheet.getRow(0);
-		for(Cell cell : titleRow) {
-			titles.add(cell.getStringCellValue());
-		}
-		
+	
 		// 處理內容
 		List<StudentDTO> students = new ArrayList<StudentDTO>();
 		 
-		int studentCount = 0;
+		int rowCount = 0;
+		
 		for (Row row : sheet) {
-			int cellIndex = 0;
-			
-			StudentDTO student = new StudentDTO();
-		    for (Cell cell : row) {		    		    	
-		        switch (cell.getCellType()) {
-		            case STRING : { 
-		            	if(cellIndex == 1) {
-		            		student.setName(cell.getStringCellValue());
-		            	}
-		            	break;
-		            }
-		            case NUMERIC: {
-		            	if(cellIndex == 0) {
-		            		student.setId((int) cell.getNumericCellValue());
-		            	}
-		            	if(cellIndex == 2) {
-		            		student.setAge((int) cell.getNumericCellValue());
-		            	}
-		            	break;
-		            }
-				default:
-					throw new IllegalArgumentException("error excel cell data fromat");
-		        }
-		        cellIndex++;		        		      
-		    }
-		    students.add(student);
-		    studentCount++;
+			// 處理 title
+			if(rowCount==0) {
+				for(Cell cell : row) {
+					titles.add(cell.getStringCellValue());
+				}
+			} else {
+			// 處理 contnet
+				int cellIndex = 0;			
+				StudentDTO student = new StudentDTO();
+			    for (Cell cell : row) {		    		    	
+			        switch (cell.getCellType()) {
+			            case STRING : { 
+			            	if(cellIndex == 1) {
+			            		student.setName(cell.getStringCellValue());
+			            	}
+			            	break;
+			            }
+			            case NUMERIC: {
+			            	if(cellIndex == 0) {
+			            		student.setId((int) cell.getNumericCellValue());
+			            	}
+			            	if(cellIndex == 2) {
+			            		student.setAge((int) cell.getNumericCellValue());
+			            	}
+			            	break;
+			            }
+					default:
+						throw new IllegalArgumentException("error excel cell data fromat");
+			        }
+			        cellIndex++;		        		      
+			    }
+			    students.add(student);
+			}
+		    rowCount++;
 		}
-		
-		System.out.println("學生數量:" + studentCount);
-		
+			
 		studentExcelContnet.setTitles(titles);
 		studentExcelContnet.setStudents(students);
 		
