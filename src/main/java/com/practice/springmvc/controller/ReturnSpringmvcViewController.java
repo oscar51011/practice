@@ -1,6 +1,7 @@
 package com.practice.springmvc.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
@@ -12,8 +13,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/springmvcView")
 public class ReturnSpringmvcViewController {
 	
-	@RequestMapping("getSpringmvcView")
+	@GetMapping("/getSpringmvcView")
 	public String getSpringmvcView(){
-		return "/springmvc/springmvcView.html";
+		return "springmvc/springmvcView.html";
 	}
+	
 }

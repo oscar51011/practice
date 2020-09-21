@@ -41,10 +41,14 @@ dependencies {
 	// swagger
 	implementation 'io.springfox:springfox-swagger2:2.9.1'
     implementation 'io.springfox:springfox-swagger-ui:2.9.1'
-
-		
+    
+    //parse Excel
+    implementation 'org.apache.poi:poi:4.1.2'
+    implementation  'org.apache.poi:poi-ooxml:4.1.2'
+    
 	// eclipse version can't run junit5
-	testCompile group: 'org.junit.platform', name: 'junit-platform-launcher', version: '1.6.2'
+	testImplementation 'org.junit.platform:junit-platform-launcher'
+	
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
 	}
