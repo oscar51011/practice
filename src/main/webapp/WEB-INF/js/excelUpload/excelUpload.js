@@ -18,18 +18,29 @@ $(document).on("click","#fileUploadBtn", function (e) {
             data: formData,
             enctype: 'multipart/form-data',
             processData: false,
-            contentType: false,
+            contentType: false, // 送往 sever 的型態
+            dataType : 'json', // 預期從server接收的資料型態
             cache: false,
-            success: function (res) {
-            	
-            	// TODO: response 回傳如何處理取值
-            	var jsonData = JSON.parse(res);
-
-                
-            },
-            error: function (err) {
-                console.error(err);
-            }
+        }).done(function(data){
+        	        	
+        	console.log(data);
+        	
+        	// 標題
+        	var titles = data.titles;
+        	
+        	for( let i = 0 ; i < titles.length ; i++ ){
+        		 console.log(titles[i]);
+        		}
+        	
+        	// 內容
+        	var students = data.students;
+        	
+        	for( let i = 0 ; i < students.length ; i++ ){
+       		 	console.log(students[i].id);
+       		 	console.log(students[i].name);
+       		 	console.log(students[i].age);
+       		}
+        	
         });
 });
 
