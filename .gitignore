@@ -4,10 +4,6 @@ build/
 !**/src/main/**
 !**/src/test/**
 
-# use gradle change envirement
-/src/main/resources/practice/properties
-/src/main/resources/application.properties
-
 # Eclipse artifacts, including WTP generated manifests
 .classpath
 .project

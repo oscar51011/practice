@@ -21,7 +21,7 @@ public class PropertiesConfig {
 		PropertySourcesPlaceholderConfigurer propertyConfigurer = new PropertySourcesPlaceholderConfigurer();
 		propertyConfigurer.setLocations(
 				new PathMatchingResourcePatternResolver()
-				.getResources("classpath:practice/properties/*.properties")
+				.getResources("classpath:*.properties")
 		);
 		return  propertyConfigurer;
 	}
