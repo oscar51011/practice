@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:with="lang=${#locale.language}" 
+	xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout" th:lang="${lang}"
+	layout:decorate="~{template.html}">
+<head>
+	<title>Excel上傳練習</title>
+	<meta charset="UTF-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript" th:src="@{/js/excelUpload/excelUpload.js}"></script>
+</head>
+
+<body>
+	
+	<section layout:fragment="custom-content">
+		<div class="home text-center">
+			<h1>請上傳 Excel 檔案</h1>
+			<div class = "file-name-wrapper">
+				<form id="file-upload-form">
+	    			<label for="file-upload-input">Select file to upload</label>
+	    			<input type="file" id="uploadfile" name="uploadfile" class = "form-control">
+	    			<button id="fileUploadBtn" type="button" class="btn btn-info">匯入檔案</button>
+				</form>
+			</div>
+			
+			<hr>
+			
+			<div id ="excelContent">
+				<table>
+					<thead id = "tableHead">
+						<tr>
+							<th>1</th>
+							<th>2</th>
+						</tr>
+					</thead>
+					<tbody id = "tableBody">
+						<tr>
+							<td>test</td>
+							<td>test2</td>
+						</tr>
+						<tr>
+							<td>test</td>
+							<td>test2</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>			
+		</div>
+	</section>
+	
+</body>
+
+</html>
