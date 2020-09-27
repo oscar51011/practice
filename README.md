@@ -1,4 +1,4 @@
-# practice
+# practice project
 
 1. 練習 springboot & 特定主題 的相關技能
 2. 目前 以 dev 為主線，要使用請切換 dev 環境以利執行
