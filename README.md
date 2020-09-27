@@ -31,6 +31,8 @@
 ## API
 - [Line Notify 練習](https://github.com/oscar51011/practice/blob/master/notes/lineNotify/lineNotify.md)
 
+## Cache 機制
+- [Caffeine Cache 練習](https://github.com/oscar51011/practice/blob/master/notes/cache/SpringCache_caffeineCache.md)
 
 ## Redis
 - [window 安裝 redis & 初體驗](https://github.com/oscar51011/practice/blob/master/notes/redis/GettingStarted.md)
