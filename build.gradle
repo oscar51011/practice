@@ -46,6 +46,12 @@ dependencies {
     implementation 'org.apache.poi:poi:4.1.2'
     implementation  'org.apache.poi:poi-ooxml:4.1.2'
     
+    // cacahe
+    implementation 'org.springframework.boot:spring-boot-starter-cache'
+    // caffeine cache
+    implementation 'com.github.ben-manes.caffeine:caffeine:2.8.4'
+    
+    
 	// eclipse version can't run junit5
 	testImplementation 'org.junit.platform:junit-platform-launcher'
 	
