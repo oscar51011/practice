@@ -13,9 +13,9 @@
 
   `gradle bootRun --args='--spring.profiles.active=dev'`
   
-  dev   : [http://localhost:8080/](http://localhost:8080/)  <br>
-  test  : [http://localhost:8081/](http://localhost:8081/)  <br>
-  prod  : [http://localhost:8082/](http://localhost:8082/)  <br>
+  dev   : [http://localhost:8081/](http://localhost:8081/)  <br>
+  test  : [http://localhost:8082/](http://localhost:8082/)  <br>
+  prod  : [http://localhost:8083/](http://localhost:8083/)  <br>
   
 - 如果使用 IDE 啟動
   
