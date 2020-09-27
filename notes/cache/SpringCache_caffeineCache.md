@@ -4,7 +4,7 @@ import gradle
 
 ```
 	implementation 'org.springframework.boot:spring-boot-starter-cache:2.3.1.RELEASE'
-	implementation 'com.github.ben-manes.caffeine:caffeine:2.8.1'
+	implementation 'com.github.ben-manes.caffeine:caffeine:2.8.4'
 
 ```
 
