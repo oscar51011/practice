@@ -6,7 +6,6 @@ import org.springframework.stereotype.Repository;
 
 import com.practice.productMaintain.model.ProductModel;
 
-@Repository
 @Mapper
 public interface MaintainProductMapper {
 	int saveProduct(ProductModel product);
