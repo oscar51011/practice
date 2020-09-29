@@ -28,6 +28,9 @@
 ## Design Pattern
 - [strategy pattern 練習](https://github.com/oscar51011/practice/blob/master/notes/designPattern/strategyPattern.md)
 
+## Multiple Datasource
+- [專案多數據源配置 練習](https://github.com/oscar51011/practice/blob/master/notes/multipleDatasource/multipleDatasource_mybatis.md)
+
 ## API
 - [Line Notify 練習](https://github.com/oscar51011/practice/blob/master/notes/lineNotify/lineNotify.md)
 
